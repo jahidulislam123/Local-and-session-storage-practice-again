@@ -59,3 +59,12 @@ const addToDb=(item)=>{
 
 // local storage theke jokhon amara abar data anbo tokhon 
 // amader ke jshon.parse kore nite hobe karon data gula kintu amader string hishebe thakbe tai 
+
+const removeitem=(item)=>{
+    const storedTraker=localStorage.getItem("cheacka-trekar");
+    if(storedTraker){
+        const storedObject=JSON.parse(storedTraker);
+        delete storedObject(item);
+        localStorage.setItem('cheacka-trekar',JSON.stringify(storedObject));
+    }
+}
