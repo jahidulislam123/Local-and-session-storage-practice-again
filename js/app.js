@@ -26,6 +26,10 @@ const addToDb=(item)=>{
     // db.alom=1;system 1
     // db['alom']=1; second system
     // db[item]=1;
+    let storedTraker=localStorage.getItem('cheacka-trekar');
+    if(storedTraker){
+        db=JSON.parse( storedTraker);
+    }
 
 
     if(item in db){
@@ -37,7 +41,8 @@ const addToDb=(item)=>{
         db[item]=1;
         //tem na thakle item er man 1 bosay dibo 
     }
-    console.log(item);
+    // console.log(item);
+    localStorage.setItem('cheacka-trekar',JSON.stringify(db));
 
 }
 
