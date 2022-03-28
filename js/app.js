@@ -46,3 +46,11 @@ const addToDb=(item)=>{
 //2: local storage .set item 
 //3:set item dite hole 2 ta jinish dite hobe ekta holo key opor ta hoilo value 
 
+// local ba session storage ke sorasori db te rakha jay na 
+//sekhetre amader jsson . stringify e convert korte hobe jodio dekhte object ba array er moto dekhabe 
+
+
+
+
+// local storage theke jokhon amara abar data anbo tokhon 
+// amader ke jshon.parse kore nite hobe karon data gula kintu amader string hishebe thakbe tai 
